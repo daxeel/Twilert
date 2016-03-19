@@ -1,2 +1,2 @@
 # Twilert
-Simple python script for real time desktop hashtag tweet alert notification.
+Simple python script for real time desktop twitter hashtag tweet alert notification.
