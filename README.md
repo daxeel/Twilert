@@ -9,6 +9,10 @@ git clone https://github.com/daxeel/Twilert.git
 ```sh
 cd Twilert
 ```
+Install dependencies
+```sh
+pip install -r requirements.txt
+```
 Open twilert.py file and on <b>line number 44</b>, add your hashtag inside <b>get_tweet(YOUR_HASHTAG)</b> for which you want to get tweets alert.<br>
 Now,
 ```sh
