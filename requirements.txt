@@ -1,0 +1,2 @@
+beautifulsoup4==4.4.0
+pync==1.6.1
