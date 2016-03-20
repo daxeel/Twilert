@@ -1,6 +1,9 @@
 # Twilert
 Simple python script for real time desktop twitter hashtag tweet alert notification.
 
+# Twilert in Action
+<img src="https://media.giphy.com/media/l2QZWDbW8LQpuUUj6/giphy.gif">
+
 # How to use?
 Follow these commands.
 ```sh
