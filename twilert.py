@@ -14,9 +14,7 @@ import urllib2
 from bs4 import BeautifulSoup
 import pickledb
 from pync import Notifier
-
-# Create db
-db = pickledb.load('track_tweet.db', True) 
+import sys
 
 def get_tweet(hashtag):
 
@@ -38,7 +36,16 @@ def get_tweet(hashtag):
 
 		Notifier.notify('New tweet by '+recent_username, title='Twilert', open=tweet_url) # Push desktop notification for new tweet
 
-# Continous loop for checking new tweet
-while True:
-	print "checking..."
-	get_tweet('programming') # Specify hashtag for which you want to get tweets in get_tweet function
+args = sys.argv
+if len(args) == 3:
+	if args[1] == "--hashtag":
+		# Create db
+		db = pickledb.load('track_tweet.db', True) 
+		# Continous loop for checking new tweet
+		while True:
+			print "checking..."
+			get_tweet(args[2]) # Specify hashtag for which you want to get tweets in get_tweet function
+	else:
+		print "Invalid syntax"
+else:
+	print "Invalid arguments passed."
