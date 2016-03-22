@@ -16,9 +16,12 @@ Install dependencies
 ```sh
 pip install -r requirements.txt
 ```
-Open twilert.py file and on <b>line number 44</b>, add your hashtag inside <b>get_tweet(YOUR_HASHTAG)</b> for which you want to get tweets alert.<br>
-Now,
+Now, run this command to start script.
 ```sh
-python twilert.py
+python twilert.py --hashtag YOUR_HASHTAG
+```
+For example, i want tweet alert for new tweets coming under hashtag "programming".
+```sh
+python twilert.py --hashtag programming
 ```
 And that's it!!
