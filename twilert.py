@@ -46,6 +46,6 @@ if len(args) == 3:
 			print "checking..."
 			get_tweet(args[2]) # Specify hashtag for which you want to get tweets in get_tweet function
 	else:
-		print "Invalid syntax"
+		print "Invalid syntax. Please read the docs at https://github.com/daxeel/Twilert"
 else:
-	print "Invalid arguments passed."
+	print "Invalid arguments passed. Please read the docs at https://github.com/daxeel/Twilert"
